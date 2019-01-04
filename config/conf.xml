@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- $Id$ -->
+<configuration>
+ <configsection name="api">
+  <configheader>Authentication</configheader>
+  <configswitch name="authBackend" desc="What auth driver should we use if there is no 'auth' key in routes?">horde
+   <case name="horde" desc="Horde Login"></case>
+  </configswitch>
+  <configswitch name="authMethod" desc="What auth method should we use if there is no 'auth' key in routes?">horde
+   <case name="http-basic" desc="HTTP Basic Auth"></case>
+   <case name="none" desc="No Auth"></case>
+  </configswitch>
+ </configsection>
+</configuration>

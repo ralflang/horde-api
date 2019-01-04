@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>api</name>
+ <channel>pear.horde.org</channel>
+ <summary>Api for new Horde applications</summary>
+ <description>TODO</description>
+ <lead>
+  <name>Chuck Hagenbuch</name>
+  <user>chuck</user>
+  <email>chuck@horde.org</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Jan Schneider</name>
+  <user>jan</user>
+  <email>jan@horde.org</email>
+  <active>yes</active>
+ </lead>
+ <date>2017-11-11</date>
+ <version>
+  <release>1.0.0alpha1</release>
+  <api>1.0.0alpha1</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="TODO">TODO</license>
+ <notes>
+* Initial release.
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <dir name="config">
+    <file name=".htaccess" role="horde" />
+    <file name="conf.xml" role="horde" />
+    <file name="prefs.php" role="horde" />
+   </dir> <!-- /config -->
+   <dir name="doc">
+    <file name="CHANGES" role="doc" />
+    <file name="CREDITS.rst" role="doc" />
+    <file name="INSTALL.rst" role="doc" />
+    <file name="RELEASE_NOTES" role="doc" />
+   </dir> <!-- /doc -->
+   <dir name="lib">
+    <dir name="Ajax">
+     <file name="Application.php" role="horde" />
+    </dir> <!-- /lib/Ajax -->
+    <dir name="Block">
+     <file name="Example.php" role="horde" />
+    </dir> <!-- /lib/Block -->
+    <dir name="Driver">
+     <file name="Sql.php" role="horde" />
+    </dir> <!-- /lib/Driver -->
+    <dir name="Factory">
+     <file name="Driver.php" role="horde" />
+    </dir> <!-- /lib/Factory -->
+    <file name=".htaccess" role="horde" />
+    <file name="Api.php" role="horde" />
+    <file name="Application.php" role="horde" />
+    <file name="Driver.php" role="horde" />
+    <file name="Exception.php" role="horde" />
+    <file name="Test.php" role="horde" />
+   </dir> <!-- /lib -->
+   <dir name="locale">
+    <dir name="en">
+     <file name="help.xml" role="horde" />
+    </dir> <!-- /locale/en -->
+    <file name=".htaccess" role="horde" />
+    <file name="api.pot" role="horde" />
+   </dir> <!-- /locale -->
+   <dir name="migration">
+    <file name="1_api_base_tables.php" role="horde" />
+   </dir> <!-- /migration -->
+   <dir name="templates">
+    <file name=".htaccess" role="horde" />
+    <file name="list.html.php" role="horde" />
+   </dir> <!-- /templates -->
+   <dir name="test">
+    <dir name="Api">
+     <file name="AllTests.php" role="test" />
+     <file name="bootstrap.php" role="test" />
+     <file name="ExampleTest.php" role="test" />
+    </dir> <!-- /test/Api -->
+   </dir> <!-- /test -->
+   <dir name="themes">
+    <dir name="default">
+     <dir name="graphics">
+      <file name="delete.png" role="horde" />
+      <file name="user.png" role="horde" />
+     </dir> <!-- /themes/default/graphics -->
+     <file name="screen.css" role="horde" />
+    </dir> <!-- /themes/default -->
+   </dir> <!-- /themes -->
+   <file name="index.php" role="horde" />
+   <file name="LICENSE" role="doc" />
+   <file name="LICENSE.ASL" role="horde" />
+   <file name="LICENSE.BSDL" role="horde" />
+   <file name="list.php" role="horde" />
+   <file name="README.rst" role="doc" />
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.7.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="api/config/.htaccess" name="config/.htaccess" />
+   <install as="api/config/conf.xml" name="config/conf.xml" />
+   <install as="api/config/prefs.php" name="config/prefs.php" />
+   <install as="CHANGES" name="doc/CHANGES" />
+   <install as="CREDITS.rst" name="doc/CREDITS.rst" />
+   <install as="INSTALL.rst" name="doc/INSTALL.rst" />
+   <install as="RELEASE_NOTES" name="doc/RELEASE_NOTES" />
+   <install as="api/index.php" name="index.php" />
+   <install as="api/lib/.htaccess" name="lib/.htaccess" />
+   <install as="api/lib/Ajax/Application.php" name="lib/Ajax/Application.php" />
+   <install as="api/lib/Api.php" name="lib/Api.php" />
+   <install as="api/lib/Application.php" name="lib/Application.php" />
+   <install as="api/lib/Block/Example.php" name="lib/Block/Example.php" />
+   <install as="api/lib/Driver.php" name="lib/Driver.php" />
+   <install as="api/lib/Driver/Sql.php" name="lib/Driver/Sql.php" />
+   <install as="api/lib/Exception.php" name="lib/Exception.php" />
+   <install as="api/lib/Factory/Driver.php" name="lib/Factory/Driver.php" />
+   <install as="api/lib/Test.php" name="lib/Test.php" />
+   <install as="LICENSE" name="LICENSE" />
+   <install as="api/LICENSE.ASL" name="LICENSE.ASL" />
+   <install as="api/LICENSE.BSDL" name="LICENSE.BSDL" />
+   <install as="api/list.php" name="list.php" />
+   <install as="api/locale/.htaccess" name="locale/.htaccess" />
+   <install as="api/locale/en/help.xml" name="locale/en/help.xml" />
+   <install as="api/locale/api.pot" name="locale/api.pot" />
+   <install as="api/migration/1_api_base_tables.php" name="migration/1_api_base_tables.php" />
+   <install as="README.rst" name="README.rst" />
+   <install as="api/templates/.htaccess" name="templates/.htaccess" />
+   <install as="api/templates/list.html.php" name="templates/list.html.php" />
+   <install as="Api/AllTests.php" name="test/Api/AllTests.php" />
+   <install as="Api/bootstrap.php" name="test/Api/bootstrap.php" />
+   <install as="Api/ExampleTest.php" name="test/Api/ExampleTest.php" />
+   <install as="api/themes/default/graphics/delete.png" name="themes/default/graphics/delete.png" />
+   <install as="api/themes/default/graphics/user.png" name="themes/default/graphics/user.png" />
+   <install as="api/themes/default/screen.css" name="themes/default/screen.css" />
+  </filelist>
+ </phprelease>
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0alpha1</release>
+    <api>1.0.0alpha1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2017-11-11</date>
+   <license uri="TODO">TODO</license>
+   <notes>
+* Initial release.
+   </notes>
+  </release>
+ </changelog>
+</package>
