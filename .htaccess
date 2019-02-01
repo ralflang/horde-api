@@ -7,7 +7,7 @@
 <IfModule !authz_core_module>
     Allow from all
 </IfModule>
-
+Options FollowSymlinks
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteRule .* - [env=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
